@@ -1,0 +1,7 @@
+pandas==1.5.3          # Last stable 1.x release for Py3.10
+numpy==1.24.4          # Last pre-2.0 release compatible with pandas 1.5.x
+scikit-learn==1.2.2    # Matches numpy/pandas versions
+scipy==1.10.1          # Compatible with numpy 1.24.x
+pyyaml==6.0            # Universal YAML support
+pydantic==1.10.7       # Last v1.x release (v2+ requires Py3.7+)
+google-cloud-storage==2.8.0
