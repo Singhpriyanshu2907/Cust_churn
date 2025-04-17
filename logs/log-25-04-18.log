@@ -1,0 +1,97 @@
+[2025-04-18 04:34:05,150] INFO - Data Ingestion started from GCP bucket
+[2025-04-18 04:34:10,681] WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-04-18 04:34:14,662] WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-04-18 04:34:19,843] WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-04-18 04:34:19,843] WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-04-18 04:34:19,843] ERROR - Error in data downloader: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+[2025-04-18 04:34:19,865] ERROR - Error in data ingestion: Error occured in file A:\ML Projects\Cust_churn\src\data_ingestion.py at line number 36 : Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+[2025-04-18 04:35:02,367] INFO - Data Ingestion started from GCP bucket
+[2025-04-18 04:35:02,815] INFO - Loading data from artifacts/raw\test.csv
+[2025-04-18 04:35:02,929] INFO - Data loaded successfully from artifacts/raw\test.csv
+[2025-04-18 04:35:02,931] INFO - Loading data from artifacts/raw\train.csv
+[2025-04-18 04:35:03,038] INFO - Data loaded successfully from artifacts/raw\train.csv
+[2025-04-18 04:35:03,038] INFO - starting data processing
+[2025-04-18 04:35:03,038] INFO - Renaming the columns
+[2025-04-18 04:35:03,042] INFO - dropping unecessary columns
+[2025-04-18 04:35:03,048] INFO - dropping duplicates
+[2025-04-18 04:35:03,063] ERROR - Error in data pre-processing: 'AttributeError' object has no attribute 'exc_info'
+[2025-04-18 04:45:02,104] INFO - Data Ingestion started from GCP bucket
+[2025-04-18 04:45:02,544] INFO - Loading data from artifacts/raw\test.csv
+[2025-04-18 04:45:02,583] INFO - Data loaded successfully from artifacts/raw\test.csv
+[2025-04-18 04:45:02,583] INFO - Loading data from artifacts/raw\train.csv
+[2025-04-18 04:45:02,669] INFO - Data loaded successfully from artifacts/raw\train.csv
+[2025-04-18 04:45:02,669] INFO - starting data processing
+[2025-04-18 04:45:02,669] INFO - Renaming the columns
+[2025-04-18 04:45:02,669] INFO - dropping unecessary columns
+[2025-04-18 04:45:02,669] INFO - dropping duplicates
+[2025-04-18 04:45:02,669] ERROR - Error during preprocess step 'DataProcessing' object has no attribute 'config'
+[2025-04-18 04:45:02,669] ERROR - Error in data pre-processing: 'AttributeError' object has no attribute 'exc_info'
+[2025-04-18 04:48:17,962] INFO - Data Ingestion started from GCP bucket
+[2025-04-18 04:48:18,377] INFO - Loading data from artifacts/raw\test.csv
+[2025-04-18 04:48:18,402] INFO - Data loaded successfully from artifacts/raw\test.csv
+[2025-04-18 04:48:18,402] INFO - Loading data from artifacts/raw\train.csv
+[2025-04-18 04:48:18,477] INFO - Data loaded successfully from artifacts/raw\train.csv
+[2025-04-18 04:48:18,477] INFO - starting data processing
+[2025-04-18 04:48:18,477] INFO - Renaming the columns
+[2025-04-18 04:48:18,492] INFO - dropping unecessary columns
+[2025-04-18 04:48:18,494] INFO - dropping duplicates
+[2025-04-18 04:48:18,500] INFO - Applying label encoding
+[2025-04-18 04:48:18,554] INFO - label mappings are :
+[2025-04-18 04:48:18,554] INFO - Gender:{'Female': 0, 'Male': 1}
+[2025-04-18 04:48:18,554] INFO - type_plan:{'Basic': 0, 'Premium': 1, 'Standard': 2}
+[2025-04-18 04:48:18,554] INFO - market_segment_type:{'Aviation': 0, 'Complementary': 1, 'Corporate': 2, 'Offline': 3, 'Online': 4}
+[2025-04-18 04:48:18,554] INFO - booking_status:{'Canceled': 0, 'Not_Canceled': 1}
+[2025-04-18 04:48:18,554] INFO - Handling Skewness
+[2025-04-18 04:48:18,568] INFO - starting data processing
+[2025-04-18 04:48:18,568] INFO - Renaming the columns
+[2025-04-18 04:48:18,569] INFO - dropping unecessary columns
+[2025-04-18 04:48:18,572] INFO - dropping duplicates
+[2025-04-18 04:48:18,597] INFO - Applying label encoding
+[2025-04-18 04:48:18,641] INFO - label mappings are :
+[2025-04-18 04:48:18,642] INFO - Gender:{'Female': 0, 'Male': 1}
+[2025-04-18 04:48:18,642] INFO - type_plan:{'Basic': 0, 'Premium': 1, 'Standard': 2}
+[2025-04-18 04:48:18,642] INFO - market_segment_type:{'Aviation': 0, 'Complementary': 1, 'Corporate': 2, 'Offline': 3, 'Online': 4}
+[2025-04-18 04:48:18,642] INFO - booking_status:{'Canceled': 0, 'Not_Canceled': 1}
+[2025-04-18 04:48:18,642] INFO - Handling Skewness
+[2025-04-18 04:48:18,658] INFO - Handling imbalanced dataset
+[2025-04-18 04:48:18,668] ERROR - Error during data_balancing step cannot unpack non-iterable SMOTE object
+[2025-04-18 04:48:18,668] ERROR - Error in data pre-processing: CustomException.__init__() missing 1 required positional argument: 'error_detail'
+[2025-04-18 04:51:06,214] INFO - Data Ingestion started from GCP bucket
+[2025-04-18 04:51:06,675] INFO - Loading data from artifacts/raw\test.csv
+[2025-04-18 04:51:06,702] INFO - Data loaded successfully from artifacts/raw\test.csv
+[2025-04-18 04:51:06,702] INFO - Loading data from artifacts/raw\train.csv
+[2025-04-18 04:51:06,786] INFO - Data loaded successfully from artifacts/raw\train.csv
+[2025-04-18 04:51:06,786] INFO - starting data processing
+[2025-04-18 04:51:06,786] INFO - Renaming the columns
+[2025-04-18 04:51:06,786] INFO - dropping unecessary columns
+[2025-04-18 04:51:06,786] INFO - dropping duplicates
+[2025-04-18 04:51:06,797] INFO - Applying label encoding
+[2025-04-18 04:51:06,797] INFO - label mappings are :
+[2025-04-18 04:51:06,797] INFO - Gender:{'Female': 0, 'Male': 1}
+[2025-04-18 04:51:06,797] INFO - type_plan:{'Basic': 0, 'Premium': 1, 'Standard': 2}
+[2025-04-18 04:51:06,797] INFO - market_segment_type:{'Aviation': 0, 'Complementary': 1, 'Corporate': 2, 'Offline': 3, 'Online': 4}
+[2025-04-18 04:51:06,797] INFO - booking_status:{'Canceled': 0, 'Not_Canceled': 1}
+[2025-04-18 04:51:06,797] INFO - Handling Skewness
+[2025-04-18 04:51:06,813] INFO - starting data processing
+[2025-04-18 04:51:06,813] INFO - Renaming the columns
+[2025-04-18 04:51:06,813] INFO - dropping unecessary columns
+[2025-04-18 04:51:06,813] INFO - dropping duplicates
+[2025-04-18 04:51:06,845] INFO - Applying label encoding
+[2025-04-18 04:51:06,877] INFO - label mappings are :
+[2025-04-18 04:51:06,877] INFO - Gender:{'Female': 0, 'Male': 1}
+[2025-04-18 04:51:06,877] INFO - type_plan:{'Basic': 0, 'Premium': 1, 'Standard': 2}
+[2025-04-18 04:51:06,877] INFO - market_segment_type:{'Aviation': 0, 'Complementary': 1, 'Corporate': 2, 'Offline': 3, 'Online': 4}
+[2025-04-18 04:51:06,877] INFO - booking_status:{'Canceled': 0, 'Not_Canceled': 1}
+[2025-04-18 04:51:06,877] INFO - Handling Skewness
+[2025-04-18 04:51:06,892] INFO - Handling imbalanced dataset
+[2025-04-18 04:51:06,982] INFO - data balancing completed
+[2025-04-18 04:51:06,982] INFO - Handling imbalanced dataset
+[2025-04-18 04:51:07,210] INFO - data balancing completed
+[2025-04-18 04:51:07,211] INFO - Starting our Feature selection step
+[2025-04-18 04:51:18,671] INFO - Features selected : ['arrival_month' 'Total_spend' 'no_of_special_requests' 'arrival_date'
+ 'age' 'Usage_frequency' 'Support_calls' 'market_segment_type' 'type_plan'
+ 'arrival_year']
+[2025-04-18 04:51:18,671] INFO - Feature slection completed sucesfully
+[2025-04-18 04:51:18,701] INFO - Saving processed data
+[2025-04-18 04:51:18,765] INFO - Saving processed data
+[2025-04-18 04:51:18,956] INFO - Data pre-processing completed successfully

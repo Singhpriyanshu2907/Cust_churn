@@ -6,6 +6,26 @@ data_ingestion:
 
 data_processing:
   categorical_col:
-  -
+  - Gender
+  - type_plan
+  - market_segment_type
+  - booking_status
+
   numerical_col:
-  -
+  - age
+  - Usage_frequency
+  - Support_calls
+  - arrival_year
+  - arrival_month
+  - arrival_date
+  - no_of_previous_cancellations
+  - no_of_previous_bookings_not_canceled
+  - Total_spend
+  - no_of_special_requests
+
+  skewness_threshold : 5
+
+  num_of_features : 10
+
+
+  
