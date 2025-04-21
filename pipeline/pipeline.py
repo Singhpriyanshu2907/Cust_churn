@@ -20,12 +20,18 @@ class pipeline():
         
         config = read_yaml(config_path)
         
+        
+        ##### DATA INGESTION PIPELINE #####
         #data_ingestion = DataIngestion(config)
         #data_ingestion.run_ingestion()
         
+
+        ##### DATA PROCESSING PIPELINE #####
         # data_processing = DataProcessing(train_file_path,test_file_path,processed_dir,config_path)
         # data_processing.run_preprocessing()
 
+
+        ##### MODEL TRAINING PIPELINE #####
         model_training = ModelTrainer(processed_train_data_path,processed_test_data_path,model_path)
         model_training.run_modeltrainer()
 

@@ -1,0 +1,4 @@
+venv/
+logs/
+mlruns/
+Customer_churn.egg-info/
