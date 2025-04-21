@@ -2,10 +2,12 @@ import sys
 import yaml
 from src.data_ingestion import DataIngestion
 from src.data_processing import DataProcessing
+from src.model_trainer import ModelTrainer
 from src.logger import auto_logger
 from src.custom_exception import CustomException
 from config.paths import *
-from utils.common_func import read_yaml
+from config.model_params import *
+from utils.common_func import read_yaml, data_loader, clean_column_names
 
 logger = auto_logger(__name__)
 
@@ -15,10 +17,17 @@ class pipeline():
         pass
 
     def main(self):
+        
         config = read_yaml(config_path)
+        
         #data_ingestion = DataIngestion(config)
         #data_ingestion.run_ingestion()
-        data_processing = DataProcessing(train_file_path,test_file_path,processed_dir,config_path)
-        data_processing.run_preprocessing()
+        
+        # data_processing = DataProcessing(train_file_path,test_file_path,processed_dir,config_path)
+        # data_processing.run_preprocessing()
+
+        model_training = ModelTrainer(processed_train_data_path,processed_test_data_path,model_path)
+        model_training.run_modeltrainer()
+
 
 

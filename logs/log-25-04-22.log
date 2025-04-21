@@ -1,0 +1,54 @@
+[2025-04-22 04:24:58,643] INFO - Data Ingestion started from GCP bucket
+[2025-04-22 04:24:59,101] INFO - Starting Model Trainer Pipeline
+[2025-04-22 04:24:59,101] INFO - Starting loading train-data for model_training
+[2025-04-22 04:24:59,101] INFO - Loading data from artifacts/processed\processed_train.csv
+[2025-04-22 04:24:59,118] INFO - Data loaded successfully from artifacts/processed\processed_train.csv
+[2025-04-22 04:24:59,118] INFO - Starting loading test-data for model_training
+[2025-04-22 04:24:59,118] INFO - Loading data from artifacts/processed\processed_test.csv
+[2025-04-22 04:24:59,133] INFO - Data loaded successfully from artifacts/processed\processed_test.csv
+[2025-04-22 04:24:59,150] INFO - Splitting data into x_train, y_train, x_test and y_test
+[2025-04-22 04:24:59,152] INFO - Sucessfully Splited data into x_train, y_train, x_test and y_test
+[2025-04-22 04:24:59,152] INFO - Initializing model
+[2025-04-22 04:24:59,152] INFO - Initializing random search CV for hyper-parameter tuning
+[2025-04-22 04:24:59,152] INFO - Starting hyper-parameter tuning model training
+[2025-04-22 04:26:22,278] INFO - Saving best parameters
+[2025-04-22 04:26:22,278] INFO - Saving best model
+[2025-04-22 04:26:22,278] INFO - starting prediction on x_test
+[2025-04-22 04:26:22,290] INFO - Collecting evaluation scores
+[2025-04-22 04:26:22,309] INFO - Accuracy Score : 0.6675966108700144
+[2025-04-22 04:26:22,309] INFO - Precision Score : 0.6149702296569323
+[2025-04-22 04:26:22,311] INFO - Recall Score : 0.8964662120272784
+[2025-04-22 04:26:22,311] INFO - F1_Score : 0.7295047506936853
+[2025-04-22 04:26:22,311] INFO - Initializing to save model
+[2025-04-22 04:26:22,311] INFO - saving model
+[2025-04-22 04:26:22,318] INFO - Model saved succesfully
+[2025-04-22 04:26:22,320] INFO - Model Training pipeline completed
+[2025-04-22 04:47:46,243] INFO - Data Ingestion started from GCP bucket
+[2025-04-22 04:47:50,543] INFO - Starting Model Trainer Pipeline
+[2025-04-22 04:47:50,543] INFO - starting mlflow experimentation
+[2025-04-22 04:47:50,543] INFO - Logging the training and testing dataset with MLflow
+[2025-04-22 04:47:50,561] INFO - Starting loading train-data for model_training
+[2025-04-22 04:47:50,561] INFO - Loading data from artifacts/processed\processed_train.csv
+[2025-04-22 04:47:50,590] INFO - Data loaded successfully from artifacts/processed\processed_train.csv
+[2025-04-22 04:47:50,597] INFO - Starting loading test-data for model_training
+[2025-04-22 04:47:50,597] INFO - Loading data from artifacts/processed\processed_test.csv
+[2025-04-22 04:47:50,605] INFO - Data loaded successfully from artifacts/processed\processed_test.csv
+[2025-04-22 04:47:50,605] INFO - Splitting data into x_train, y_train, x_test and y_test
+[2025-04-22 04:47:50,605] INFO - Sucessfully Splited data into x_train, y_train, x_test and y_test
+[2025-04-22 04:47:50,605] INFO - Initializing model
+[2025-04-22 04:47:50,605] INFO - Initializing random search CV for hyper-parameter tuning
+[2025-04-22 04:47:50,605] INFO - Starting hyper-parameter tuning model training
+[2025-04-22 04:49:16,883] INFO - Saving best parameters
+[2025-04-22 04:49:16,883] INFO - Saving best model
+[2025-04-22 04:49:16,883] INFO - starting prediction on x_test
+[2025-04-22 04:49:16,897] INFO - Collecting evaluation scores
+[2025-04-22 04:49:16,915] INFO - Accuracy Score : 0.6675966108700144
+[2025-04-22 04:49:16,915] INFO - Precision Score : 0.6149702296569323
+[2025-04-22 04:49:16,915] INFO - Recall Score : 0.8964662120272784
+[2025-04-22 04:49:16,915] INFO - F1_Score : 0.7295047506936853
+[2025-04-22 04:49:16,915] INFO - Initializing to save model
+[2025-04-22 04:49:16,915] INFO - saving model
+[2025-04-22 04:49:16,923] INFO - Model saved succesfully
+[2025-04-22 04:49:16,923] INFO - Logging the model into mlflow
+[2025-04-22 04:49:16,948] INFO - Logging the params & metrics into mlflow
+[2025-04-22 04:49:16,997] INFO - Model Training pipeline completed

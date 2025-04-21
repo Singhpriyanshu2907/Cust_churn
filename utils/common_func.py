@@ -31,3 +31,13 @@ def data_loader(file_path):
     except Exception as e:
         raise CustomException("Failed to load data",e)
     
+
+def clean_column_names(df):
+    df.columns = (
+        df.columns.str.encode('ascii', 'ignore').str.decode('utf-8')  # Remove non-ASCII
+                  .str.replace(r'[^\w\s]', '', regex=True)  # Remove special chars like "_", "-", etc.
+                  .str.replace(' ', '')  # Remove spaces
+                  .str.strip()  # Trim whitespace
+    )
+    return df
+    
