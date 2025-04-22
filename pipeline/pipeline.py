@@ -27,8 +27,8 @@ class pipeline():
         
 
         ##### DATA PROCESSING PIPELINE #####
-        # data_processing = DataProcessing(train_file_path,test_file_path,processed_dir,config_path)
-        # data_processing.run_preprocessing()
+        data_processing = DataProcessing(train_file_path,test_file_path,processed_dir,config_path)
+        data_processing.run_preprocessing()
 
 
         ##### MODEL TRAINING PIPELINE #####

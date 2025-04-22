@@ -138,7 +138,7 @@ class DataProcessing:
     def data_save(self,df,file_path):
         try:
             logger.info("Saving processed data")
-            df.to_csv(file_path)
+            df.to_csv(file_path,index=False)
 
         except Exception as e:
             logger.error(f"Error during data_saving step {e}")
