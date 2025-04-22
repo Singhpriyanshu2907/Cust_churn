@@ -20,6 +20,7 @@ pipeline{
                 script{
                     echo 'Setting up venv and installing dependencies.............'
                     sh '''
+                    python3.10 -m venv ${VENV_DIR}
                     . ${VENV_DIR}/bin/activate
                     pip install --upgrade pip
                     pip install -e .
