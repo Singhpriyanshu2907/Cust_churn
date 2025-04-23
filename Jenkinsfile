@@ -24,7 +24,7 @@ pipeline{
                     sh '''
                     python3.10 -m venv ${VENV_DIR}
                     . ${VENV_DIR}/bin/activate
-                    pip install --upgrade pip
+                    pip install --upgrade pip setuptools wheel
                     pip install -e .
                     '''                    
                 }
